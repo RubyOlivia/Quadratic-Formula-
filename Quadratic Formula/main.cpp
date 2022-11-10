@@ -1,14 +1,28 @@
-//
-//  main.cpp
-//  Quadratic Formula
-//
-//  Created by Ruby on 11/10/22.
-//
-
 #include <iostream>
+#include <cmath>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+int main(){
+  
+  double a;
+  double b;
+  double c;
+  double root1;
+  double root2;
+
+  std::cout << "Enter a: ";
+  std::cin >> a;
+
+  std::cout << "Enter b: ";
+  std::cin >> b;
+
+  std::cout << "Enter c: ";
+  std::cin >> c;
+
+  root1 = (-b + std::sqrt(b*b - 4*a*c)) / (2*a);
+  root2 = (-b - std::sqrt(b*b - 4*a*c)) / (2*a);
+
+  std::cout << "Root 1 is " << root1 << "\n";
+  std::cout << "Root 2 is " << root2 << "\n";
+
+  return 0;
 }
